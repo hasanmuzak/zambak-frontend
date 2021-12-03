@@ -1,0 +1,71 @@
+@import '~ant-design-vue/dist/antd.less';
+
+
+@font-family: 'Source Sans Pro', sans-serif;
+
+.ant-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.light-text {
+    transition: .2s;
+    color: rgba(0, 0, 0, .45);
+}
+
+.light-text-hover {
+    &:hover {
+        color: rgba(0, 0, 0, .65);
+    }
+}
+
+.dark-text {
+    transition: .2s;
+    color: #111;
+}
+
+.f-15 {
+    font-size: 15px;
+}
+
+.f-12 {
+    font-size: 12px;
+}
+
+.f-11 {
+    font-size: 11px;
+}
+
+.f-13 {
+    font-size: 13px;
+}
+
+
+.alert {
+    border-radius: 4px;
+    display: flex;
+    transition: .2s;
+}
+
+.alert-title {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.alert-success {
+    background-color: #e3f9ed;
+    position: relative;
+    color: #62a781;
+    &:hover {
+        background-color: #ddf7e9;
+    }
+    &::before{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        content: "";
+        width: 5px;
+        background-color: #89d8ad;
+    }
+}
